@@ -53,7 +53,8 @@ function mainMenu() {
 }
 
 function viewAllDepartments() {
-  db.query("SELECT * FROM department", (err, res) => {
+  db.query(
+    "SELECT * FROM department", (err, res) => {
     if (err) throw err;
     console.table(res);
     mainMenu();
@@ -61,7 +62,8 @@ function viewAllDepartments() {
 }
 
 function viewAllRoles() {
-  db.query("SELECT * FROM role", (err, res) => {
+  db.query(
+    "SELECT * FROM role", (err, res) => {
     if (err) throw err;
     console.table(res);
     mainMenu();
@@ -69,12 +71,14 @@ function viewAllRoles() {
 }
 
 function viewAllEmployees() {
-  db.query(`SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, role.salary, department.name AS department FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id`,
-  (err, res) => {
-    if (err) throw err;
-    console.table(res);
-    mainMenu();
-  });
+  db.query(
+    `SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, role.salary, department.name AS department FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id`,
+    (err, res) => {
+      if (err) throw err;
+      console.table(res);
+      mainMenu();
+    }
+  );
 }
 
 function viewAllManagers() {
