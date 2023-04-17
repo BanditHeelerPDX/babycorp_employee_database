@@ -1,14 +1,7 @@
-const express = require('express');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 const mysql = require('mysql2');
 require('dotenv').config();
-
-const app = express();
-const PORT = process.env.PORT || 3030;
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -20,15 +13,6 @@ const db = mysql.createConnection({
 db.connect((err) => {
     if (err) throw err;
     console.log('You have made a connection to the database.');
-});
-
-app.use((req, res) => {
-    res.status(404).end();
-});
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT} - You better run and catch it!`);
-    mainMenu();
 });
 
 function exit() {
@@ -44,7 +28,6 @@ const actions = {
     'Add a role': addRole,
     'Add an employee': addEmployee,
     'Update an employee role': updateEmployeeRole,
-    'Return to main menu': mainMenu,
     'Exit': exit
 };
 
@@ -186,3 +169,5 @@ function updateEmployeeRole() {
     });
 })
 }
+
+mainMenu();
