@@ -69,7 +69,8 @@ function viewAllRoles() {
 }
 
 function viewAllEmployees() {
-  db.query("SELECT * FROM employee", (err, res) => {
+  db.query(`SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, role.salary, department.name AS department FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id`,
+  (err, res) => {
     if (err) throw err;
     console.table(res);
     mainMenu();
