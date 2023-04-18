@@ -9,13 +9,13 @@ A queryable database created in a node.js environment utilizing inquirer prompts
       
 ## Table of Contents
       
-- [Installation](https://github.com/banditheelerpdx/read-my-node#installation)
-- [Usage](https://github.com/banditheelerpdx/read-my-node#usage)
-- [License](https://github.com/banditheelerpdx/read-my-node#license)
-- [Contributing](https://github.com/banditheelerpdx/read-my-node#contributing)
-- [Tests](https://github.com/banditheelerpdx/read-my-node#tests)
-- [Questions](https://github.com/banditheelerpdx/read-my-node#questions)
-- [Contact](https://github.com/banditheelerpdx/read-my-node#contact)
+- [Installation](https://github.com/banditheelerpdx/babycorp_employee_database#installation)
+- [Usage](https://github.com/banditheelerpdx/babycorp_employee_database#usage)
+- [License](https://github.com/banditheelerpdx/babycorp_employee_database#license)
+- [Contributing](https://github.com/banditheelerpdx/babycorp_employee_database#contributing)
+- [Tests](https://github.com/banditheelerpdx/babycorp_employee_database#tests)
+- [Questions](https://github.com/banditheelerpdx/babycorp_employee_database#questions)
+- [Contact](https://github.com/banditheelerpdx/babycorp_employee_database#contact)
 
 ## Installation
       
