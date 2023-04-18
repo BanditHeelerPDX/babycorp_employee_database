@@ -32,7 +32,7 @@ This project is licensed under the MIT License license. See the [LICENSE](https:
 ## Contributing
       
 The following individuals and/or organizations have contributed to the viability of this application:
-My mom.  And the information super-highway for teaching me about subqueries and really nearly everything I know today.
+My mom.  And the information super-highway for teaching me about subqueries and really nearly everything I know today (especially Bing at line 119 of connection.js).
 
 If you would like to contribute to the viability or sustainability of this application, read the following:
 Holla at ya boy.
